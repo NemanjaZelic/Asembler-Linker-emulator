@@ -1,0 +1,40 @@
+SECTION: my_handler
+0: 04 18 E0 81
+4: 04 28 E0 81
+8: 00 00 12 90
+12: 00 00 20 30
+16: 00 20 F0 30
+20: 00 00 20 30
+24: 00 20 F0 30
+28: 04 00 2E 93
+32: 04 00 1E 93
+36: 04 00 FE 93
+40: 04 00 0E 97
+44: 00 00 F0 20
+48: 00 00 F0 20
+52: 00 00 F0 20
+56: 00 00 F0 20
+60: 00 00 00 02
+64: 00 00 00 00
+68: 00 00 00 03
+72: 00 00 00 00
+76: 00 00 00 00
+80: 00 00 00 00
+84: 00 00 00 00
+88: 00 00 00 00
+
+
+SYMBOLS: 
+isr_timer UND 0 extern
+isr_terminal UND 0 extern
+handler my_handler 0 global
+finish my_handler 28 local
+handle_timer my_handler 44 local
+handle_terminal my_handler 52 local
+REALOCS: 
+handle_timer my_handler 64
+handle_terminal my_handler 72
+isr_timer my_handler 76
+finish my_handler 80
+isr_terminal my_handler 84
+finish my_handler 88

@@ -1,0 +1,19 @@
+SECTION: isr
+0: 81 E0 1F FC
+4: 81 E0 2F FC
+8: 92 1F 00 18
+12: 92 2F 00 18
+16: 82 10 20 00
+20: 93 2E 00 04
+24: 93 1E 00 04
+28: 93 FE 00 04
+32: 97 0E 00 04
+36: 00 00 AB CD
+40: 00 00 00 00
+
+
+SYMBOLS: 
+value1 UND 0 extern
+isr_software isr 0 global
+REALOCS: 
+value1 isr 40

@@ -1,0 +1,123 @@
+SECTION: my_code
+0: 92 EF 00 C0
+4: 92 1F 00 C0
+8: 94 11 00 00
+12: 10 00 00 00
+16: 92 1F 00 B8
+20: 81 E0 1F FC
+24: 92 1F 00 B4
+28: 81 E0 1F FC
+32: 21 F0 00 B0
+36: 82 F0 10 B0
+40: 92 1F 00 B0
+44: 81 E0 1F FC
+48: 92 1F 00 AC
+52: 81 E0 1F FC
+56: 21 F0 00 A8
+60: 82 F0 10 A8
+64: 92 1F 00 A8
+68: 81 E0 1F FC
+72: 92 1F 00 A4
+76: 81 E0 1F FC
+80: 21 F0 00 A0
+84: 82 F0 10 A0
+88: 92 1F 00 A0
+92: 81 E0 1F FC
+96: 92 1F 00 9C
+100: 81 E0 1F FC
+104: 21 F0 00 98
+108: 82 F0 10 98
+112: 92 1F 00 98
+116: 81 E0 1F FC
+120: 92 1F 00 94
+124: 81 E0 1F FC
+128: 21 F0 00 90
+132: 82 F0 10 90
+136: 92 1F 00 90
+140: 92 11 00 00
+144: 92 2F 00 8C
+148: 92 22 00 00
+152: 92 3F 00 88
+156: 92 33 00 00
+160: 92 4F 00 84
+164: 92 44 00 00
+168: 92 5F 00 80
+172: 92 55 00 00
+176: 92 6F 00 7C
+180: 92 66 00 00
+184: 92 7F 00 78
+188: 92 77 00 00
+192: 00 00 00 00
+196: FF FF FE FE
+200: 00 00 00 00
+204: 00 00 00 01
+208: 00 00 00 01
+212: F0 00 00 00
+216: 00 00 00 00
+220: 00 00 00 02
+224: 00 00 00 01
+228: 00 00 00 00
+232: 00 00 00 00
+236: 00 00 00 07
+240: 00 00 00 0B
+244: 00 00 00 00
+248: 00 00 00 00
+252: 00 00 00 05
+256: 00 00 00 19
+260: 00 00 00 00
+264: 00 00 00 00
+268: 00 00 00 04
+272: 00 00 00 18
+276: 00 00 00 00
+280: 00 00 00 00
+284: 00 00 00 00
+288: 00 00 00 00
+292: 00 00 00 00
+296: 00 00 00 00
+300: 00 00 00 00
+304: 00 00 00 00
+308: 00 00 00 00
+
+
+SECTION: my_data
+0: 00 00 00 00
+4: 00 00 00 00
+8: 00 00 00 00
+12: 00 00 00 00
+16: 00 00 00 00
+20: 00 00 00 00
+24: 00 00 00 00
+
+
+SYMBOLS: 
+handler UND 0 extern
+mathAdd UND 0 extern
+mathSub UND 0 extern
+mathMul UND 0 extern
+mathDiv UND 0 extern
+my_start my_code 0 global
+value1 my_data 0 global
+value2 my_data 4 global
+value3 my_data 8 global
+value4 my_data 12 global
+value5 my_data 16 global
+value6 my_data 20 global
+value7 my_data 24 global
+REALOCS: 
+handler my_code 200
+value2 my_code 216
+mathAdd my_code 228
+value3 my_code 232
+mathSub my_code 244
+value4 my_code 248
+mathDiv my_code 260
+value5 my_code 264
+mathDiv my_code 276
+value6 my_code 280
+value1 my_code 284
+value2 my_code 288
+value3 my_code 292
+value4 my_code 296
+value5 my_code 300
+value6 my_code 304
+value7 my_code 308
